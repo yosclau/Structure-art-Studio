@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About — Structure Art Studio</title>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="lang-toggle">
+  <button class="lang-btn active" data-lang="en" onclick="setLang('en',this)">EN</button>
+  <button class="lang-btn" data-lang="es" onclick="setLang('es',this)">ES</button>
+</div>
+<nav id="main-nav">
+  <a href="index.html" class="nav-brand">
+    <span class="nav-logo-placeholder"></span>
+    <div class="nav-brand-text">
+      <span class="nav-brand-name">Structure Art Studio</span>
+      <span class="nav-brand-sub" data-en="Industrial Design &amp; Furniture" data-es="Diseño Industrial y Muebles">Industrial Design &amp; Furniture</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li class="nav-dropdown">
+      <a href="#" data-en="Custom ▾" data-es="Custom ▾">Custom ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="custom-kitchen.html" data-en="Kitchen" data-es="Cocina">Kitchen</a>
+        <a href="custom-living.html" data-en="Living Room" data-es="Sala">Living Room</a>
+        <a href="custom-dining.html" data-en="Dining Room" data-es="Comedor">Dining Room</a>
+        <a href="custom-bedroom.html" data-en="Bedroom" data-es="Recámara">Bedroom</a>
+        <a href="custom-office.html" data-en="Office" data-es="Oficina">Office</a>
+        <a href="custom-outdoor.html" data-en="Outdoor" data-es="Exterior">Outdoor</a>
+      </div>
+    </li>
+    <li class="nav-dropdown">
+      <a href="#" data-en="New Furniture ▾" data-es="Muebles Nuevos ▾">New Furniture ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="new-kitchen.html" data-en="Kitchen" data-es="Cocina">Kitchen</a>
+        <a href="new-living.html" data-en="Living Room" data-es="Sala">Living Room</a>
+        <a href="new-dining.html" data-en="Dining Room" data-es="Comedor">Dining Room</a>
+        <a href="new-bedroom.html" data-en="Bedroom" data-es="Recámara">Bedroom</a>
+        <a href="new-office.html" data-en="Office" data-es="Oficina">Office</a>
+        <a href="new-outdoor.html" data-en="Outdoor" data-es="Exterior">Outdoor</a>
+      </div>
+    </li>
+    <li><a href="about.html" class="active" data-en="About" data-es="Nosotros">About</a></li>
+    <li><a href="index.html#contact" class="nav-cta" data-en="Get a Quote" data-es="Cotizar">Get a Quote</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-img" id="ph-img"></div>
+  <div class="page-hero-over"></div>
+  <div class="page-hero-content">
+    <div class="sec-label" data-en="Our Story" data-es="Nuestra Historia">Our Story</div>
+    <h1 class="sec-title"><span data-en="About" data-es="Sobre">About</span> <em>Structure Art Studio</em></h1>
+    <p class="sec-desc" data-en="Industrial design meets luxury furniture. Chicago-made." data-es="Diseño industrial meets muebles de lujo. Hecho en Chicago.">Industrial design meets luxury furniture. Chicago-made.</p>
+  </div>
+</div>
+
+<section class="about" style="background:#080808;">
+  <div>
+    <div class="sec-label" data-en="Who We Are" data-es="Quiénes Somos">Who We Are</div>
+    <h2 class="sec-title"><em data-en="Built on Precision" data-es="Construido en Precisión">Built on Precision</em><br><span data-en="& Passion." data-es="y Pasión.">&amp; Passion.</span></h2>
+    <div class="gold-rule"></div>
+    <p class="sec-desc" data-en="Structure Art Studio is a custom furniture brand focused on creating unique, high-quality pieces that combine metal, wood, and natural stone. Our goal is to design furniture that not only serves a purpose but also transforms spaces through clean, modern, and industrial aesthetics." data-es="Structure Art Studio es una marca de muebles custom enfocada en crear piezas únicas y de alta calidad que combinan metal, madera y piedra natural. Nuestro objetivo es diseñar muebles que no solo cumplan una función, sino que también transformen espacios a través de estéticas limpias, modernas e industriales.">Structure Art Studio is a custom furniture brand focused on creating unique, high-quality pieces that combine metal, wood, and natural stone. Our goal is to design furniture that not only serves a purpose but also transforms spaces through clean, modern, and industrial aesthetics.</p>
+    <p class="sec-desc" style="margin-top:16px;" data-en="We work closely with clients to bring ideas to life, delivering pieces that are both functional and visually impactful. From a single custom table to a full-room build-out — we approach every project with the same level of craft and attention to detail." data-es="Trabajamos de cerca con los clientes para dar vida a las ideas, entregando piezas que son tanto funcionales como visualmente impactantes. Desde una sola mesa custom hasta un proyecto completo de habitación — abordamos cada proyecto con el mismo nivel de artesanía y atención al detalle.">We work closely with clients to bring ideas to life, delivering pieces that are both functional and visually impactful. From a single custom table to a full-room build-out — we approach every project with the same level of craft and attention to detail.</p>
+    <div class="about-stats" style="margin-top:44px;">
+      <div class="stat reveal"><div class="stat-n">100+</div><div class="stat-l" data-en="Pieces Delivered" data-es="Piezas Entregadas">Pieces Delivered</div></div>
+      <div class="stat reveal"><div class="stat-n">Custom</div><div class="stat-l" data-en="Every Design" data-es="Cada Diseño">Every Design</div></div>
+      <div class="stat reveal"><div class="stat-n">Chicago</div><div class="stat-l" data-en="Based & Built" data-es="Basados y Construidos">Based & Built</div></div>
+      <div class="stat reveal"><div class="stat-n">2</div><div class="stat-l" data-en="Product Lines" data-es="Líneas de Producto">Product Lines</div></div>
+    </div>
+  </div>
+  <div class="about-visual">
+    <div class="av-main" id="av-main"></div>
+    <div class="av-accent" id="av-accent"></div>
+    <div class="av-badge"><div class="av-badge-big">AR</div><span class="av-badge-sm">Founder</span></div>
+  </div>
+</section>
+
+<section style="background:var(--black); padding:100px 60px;">
+  <div style="max-width:800px; margin:0 auto; text-align:center;">
+    <div class="sec-label" style="justify-content:center;" data-en="The Founder" data-es="El Fundador">The Founder</div>
+    <h2 class="sec-title" style="text-align:center;">Adrián Rodriguez</h2>
+    <div class="gold-rule" style="margin:24px auto;"></div>
+    <p class="sec-desc" style="margin:0 auto; text-align:center;" data-en="Founder & Industrial Designer at Structure Art Studio. Adrián brings years of hands-on fabrication experience to every project — from structural steel to fine furniture. Based in Chicago, he leads every custom build from concept to delivery." data-es="Fundador y Diseñador Industrial en Structure Art Studio. Adrián aporta años de experiencia práctica en fabricación a cada proyecto — desde acero estructural hasta muebles finos. Basado en Chicago, lidera cada build custom desde el concepto hasta la entrega.">Founder & Industrial Designer at Structure Art Studio. Adrián brings years of hands-on fabrication experience to every project — from structural steel to fine furniture. Based in Chicago, he leads every custom build from concept to delivery.</p>
+    <div class="social-row" style="justify-content:center; margin-top:36px;">
+      <a href="https://www.instagram.com/todo_en_estructura_chicago" target="_blank" class="soc">IG</a>
+      <a href="https://wa.me/17088553201" target="_blank" class="soc">WA</a>
+      <a href="mailto:Structureartco@gmail.com" class="soc">✉</a>
+    </div>
+  </div>
+</section>
+
+<section class="materials" style="background:#080808;">
+  <div style="text-align:center; max-width:560px; margin:0 auto;">
+    <div class="sec-label" style="justify-content:center;" data-en="Our Materials" data-es="Nuestros Materiales">Our Materials</div>
+    <h2 class="sec-title" style="text-align:center;"><span data-en="Metal." data-es="Metal.">Metal.</span> <em data-en="Wood." data-es="Madera.">Wood.</em> <span data-en="Stone." data-es="Piedra.">Stone.</span></h2>
+  </div>
+  <div class="mat-grid reveal">
+    <div class="mat-card"><span class="mat-icon">⚙️</span><div class="mat-name" data-en="Metal" data-es="Metal">Metal</div><p class="mat-desc" data-en="Structural steel, stainless, and custom alloys. Welded, powder-coated, or polished to perfection." data-es="Acero estructural, inoxidable y aleaciones custom. Soldado, lacado en polvo o pulido a la perfección.">Structural steel, stainless, and custom alloys. Welded, powder-coated, or polished to perfection.</p></div>
+    <div class="mat-card"><span class="mat-icon">🌲</span><div class="mat-name" data-en="Wood" data-es="Madera">Wood</div><p class="mat-desc" data-en="Reclaimed, solid, and engineered woods. Oak, walnut, pine, and maple. Warm texture, cold contrast." data-es="Madera reciclada, maciza e ingeniería. Roble, nogal, pino y arce. Textura cálida, contraste frío.">Reclaimed, solid, and engineered woods. Oak, walnut, pine, and maple. Warm texture, cold contrast.</p></div>
+    <div class="mat-card"><span class="mat-icon">🪨</span><div class="mat-name" data-en="Natural Stone" data-es="Piedra Natural">Natural Stone</div><p class="mat-desc" data-en="Marble, granite, quartz, and onyx. Each slab unique. The ultimate luxury statement." data-es="Mármol, granito, cuarzo y ónix. Cada losa única. El statement de lujo definitivo.">Marble, granite, quartz, and onyx. Each slab unique. The ultimate luxury statement.</p></div>
+    <div class="mat-card"><span class="mat-icon">✦</span><div class="mat-name" data-en="Custom Finishes" data-es="Acabados Custom">Custom Finishes</div><p class="mat-desc" data-en="Matte, gloss, brushed, patinated. Every finish chosen to complement the space and vision." data-es="Mate, brillante, cepillado, patinado. Cada acabado elegido para complementar el espacio y visión.">Matte, gloss, brushed, patinated. Every finish chosen to complement the space and vision.</p></div>
+  </div>
+</section>
+
+<div style="background:#080808; padding:60px; text-align:center; border-top:1px solid var(--gold-border);">
+  <h2 class="sec-title" style="margin-bottom:24px;" data-en="Ready to Start Your Project?" data-es="¿Listo para Iniciar Tu Proyecto?">Ready to Start Your Project?</h2>
+  <p class="sec-desc" style="margin:0 auto 36px;" data-en="Custom furniture or ready-made — we're here for both." data-es="Muebles custom o listos — aquí estamos para los dos.">Custom furniture or ready-made — we're here for both.</p>
+  <a href="index.html#contact" class="btn-gold" data-en="Get In Touch" data-es="Contáctanos">Get In Touch</a>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand-wrap">
+      <svg width="32" height="32" viewBox="0 0 60 60" fill="none"><rect x="15" y="3" width="30" height="30" transform="rotate(45 30 18)" stroke="#B38D5F" stroke-width="1.8" fill="none"/><rect x="15" y="15" width="30" height="30" transform="rotate(45 30 30)" stroke="#B38D5F" stroke-width="1.8" fill="none"/><line x1="22" y1="14" x2="30" y2="22" stroke="#B38D5F" stroke-width="1.5"/><line x1="30" y1="22" x2="38" y2="14" stroke="#B38D5F" stroke-width="1.5"/></svg>
+      <div><div class="footer-brand-name">Structure Art Studio</div><div class="footer-brand-tag">Industrial Design &amp; Furniture · Chicago</div></div>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+      <a href="custom-kitchen.html" data-en="Custom" data-es="Custom">Custom</a>
+      <a href="new-kitchen.html" data-en="New Furniture" data-es="Muebles Nuevos">New Furniture</a>
+      <a href="index.html#contact" data-en="Contact" data-es="Contacto">Contact</a>
+    </nav>
+  </div>
+  <div class="footer-bot">
+    <div class="footer-copy">© 2026 Structure Art Studio LLC · Chicago, Illinois</div>
+    <div class="footer-copy">Structureartco@gmail.com · +1 (708) 855-3201</div>
+  </div>
+</footer>
+
+<script src="js/images.js"></script>
+<script src="js/main.js"></script>
+<script>
+document.querySelectorAll('.nav-logo-placeholder').forEach(el => el.innerHTML = LOGO_SVG);
+document.getElementById('ph-img').style.backgroundImage = `url(${IMGS.custom2})`;
+document.getElementById('av-main').style.backgroundImage = `url(${IMGS.custom1})`;
+document.getElementById('av-accent').style.backgroundImage = `url(${IMGS.inspo2})`;
+buildTicker();
+initReveal();
+</script>
+</body>
+</html>
