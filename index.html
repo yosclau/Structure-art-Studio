@@ -283,42 +283,51 @@
   </div>
   <div>
     <div class="sec-label" style="margin-bottom:24px;" data-en="Send a Message" data-es="Enviar Mensaje">Send a Message</div>
-    <div class="cform">
-      <div class="form-row2">
-        <div class="fg">
-          <label class="flbl" data-en="Name" data-es="Nombre">Name</label>
-          <input type="text" class="finput" data-placeholder-en="Your name" data-placeholder-es="Tu nombre" placeholder="Your name"/>
-        </div>
-        <div class="fg">
-          <label class="flbl" data-en="Phone" data-es="Teléfono">Phone</label>
-          <input type="text" class="finput" data-placeholder-en="Your phone" data-placeholder-es="Tu teléfono" placeholder="Your phone"/>
-        </div>
-      </div>
-      <div class="fg">
-        <label class="flbl" data-en="Email" data-es="Correo">Email</label>
-        <input type="email" class="finput" data-placeholder-en="your@email.com" data-placeholder-es="tu@correo.com" placeholder="your@email.com"/>
-      </div>
-      <div class="fg">
-        <label class="flbl" data-en="Project Type" data-es="Tipo de Proyecto">Project Type</label>
-        <select class="fsel">
-          <option value="" disabled selected data-en="Select..." data-es="Selecciona...">Select...</option>
-          <option data-en="Custom Furniture" data-es="Muebles Custom">Custom Furniture</option>
-          <option data-en="New Furniture / Curated" data-es="Muebles Nuevos / Curados">New Furniture / Curated</option>
-          <option data-en="Kitchen" data-es="Cocina">Kitchen</option>
-          <option data-en="Living Room" data-es="Sala">Living Room</option>
-          <option data-en="Dining Room" data-es="Comedor">Dining Room</option>
-          <option data-en="Bedroom" data-es="Recámara">Bedroom</option>
-          <option data-en="Office" data-es="Oficina">Office</option>
-          <option data-en="Outdoor" data-es="Exterior">Outdoor</option>
-          <option data-en="Other" data-es="Otro">Other</option>
-        </select>
-      </div>
-      <div class="fg">
-        <label class="flbl" data-en="Project Description" data-es="Descripción del Proyecto">Project Description</label>
-        <textarea class="ftxt" data-placeholder-en="Describe your project, space, style, dimensions, timeline…" data-placeholder-es="Describe tu proyecto, espacio, estilo, medidas, tiempo estimado…" placeholder="Describe your project, space, style, dimensions, timeline…"></textarea>
-      </div>
-      <button class="fsub" onclick="handleSend(this)" data-en="Send Message →" data-es="Enviar Mensaje →">Send Message →</button>
+    <form class="cform" action="https://formspree.io/f/xpqybeqw" method="POST">
+  <input type="hidden" name="_subject" value="New Structure Art Quote Request">
+
+  <div class="form-row2">
+    <div class="fg">
+      <label class="flbl" data-en="Name" data-es="Nombre">Name</label>
+      <input type="text" name="name" class="finput" placeholder="Your name" required />
     </div>
+
+    <div class="fg">
+      <label class="flbl" data-en="Phone" data-es="Teléfono">Phone</label>
+      <input type="text" name="phone" class="finput" placeholder="Your phone" />
+    </div>
+  </div>
+
+  <div class="fg">
+    <label class="flbl" data-en="Email" data-es="Correo">Email</label>
+    <input type="email" name="email" class="finput" placeholder="your@email.com" required />
+  </div>
+
+  <div class="fg">
+    <label class="flbl" data-en="Project Type" data-es="Tipo de Proyecto">Project Type</label>
+    <select class="fsel" name="project_type" required>
+      <option value="" disabled selected>Select...</option>
+      <option value="Custom Furniture">Custom Furniture</option>
+      <option value="New Furniture / Curated">New Furniture / Curated</option>
+      <option value="Kitchen">Kitchen</option>
+      <option value="Living Room">Living Room</option>
+      <option value="Dining Room">Dining Room</option>
+      <option value="Bedroom">Bedroom</option>
+      <option value="Office">Office</option>
+      <option value="Outdoor">Outdoor</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div class="fg">
+    <label class="flbl" data-en="Project Description" data-es="Descripción del Proyecto">Project Description</label>
+    <textarea class="ftxt" name="message" placeholder="Describe your project..." required></textarea>
+  </div>
+
+  <button type="submit" class="fsub">
+    Send Message →
+  </button>
+</form>
   </div>
 </section>
 
