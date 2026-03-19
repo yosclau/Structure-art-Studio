@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Structure Art Studio — Industrial Luxury Furniture · Chicago</title>
+<meta name="description" content="Custom furniture and premium curated collections. Industrial luxury aesthetic. Metal, wood, and natural stone. Chicago-made."/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- LANG TOGGLE -->
+<div class="lang-toggle">
+  <button class="lang-btn active" data-lang="en" onclick="setLang('en',this)">EN</button>
+  <button class="lang-btn" data-lang="es" onclick="setLang('es',this)">ES</button>
+</div>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <a href="index.html" class="nav-brand">
+    <span class="nav-logo-placeholder"></span>
+    <div class="nav-brand-text">
+      <span class="nav-brand-name">Structure Art Studio</span>
+      <span class="nav-brand-sub" data-en="Industrial Design & Furniture" data-es="Diseño Industrial y Muebles">Industrial Design & Furniture</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li class="nav-dropdown">
+      <a href="#" data-en="Custom ▾" data-es="Custom ▾">Custom ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="custom-kitchen.html" data-en="Kitchen" data-es="Cocina">Kitchen</a>
+        <a href="custom-living.html" data-en="Living Room" data-es="Sala">Living Room</a>
+        <a href="custom-dining.html" data-en="Dining Room" data-es="Comedor">Dining Room</a>
+        <a href="custom-bedroom.html" data-en="Bedroom" data-es="Recámara">Bedroom</a>
+        <a href="custom-office.html" data-en="Office" data-es="Oficina">Office</a>
+        <a href="custom-outdoor.html" data-en="Outdoor" data-es="Exterior">Outdoor</a>
+      </div>
+    </li>
+    <li class="nav-dropdown">
+      <a href="#" data-en="New Furniture ▾" data-es="Muebles Nuevos ▾">New Furniture ▾</a>
+      <div class="nav-dropdown-menu">
+        <a href="new-kitchen.html" data-en="Kitchen" data-es="Cocina">Kitchen</a>
+        <a href="new-living.html" data-en="Living Room" data-es="Sala">Living Room</a>
+        <a href="new-dining.html" data-en="Dining Room" data-es="Comedor">Dining Room</a>
+        <a href="new-bedroom.html" data-en="Bedroom" data-es="Recámara">Bedroom</a>
+        <a href="new-office.html" data-en="Office" data-es="Oficina">Office</a>
+        <a href="new-outdoor.html" data-en="Outdoor" data-es="Exterior">Outdoor</a>
+      </div>
+    </li>
+    <li><a href="about.html" data-en="About" data-es="Nosotros">About</a></li>
+    <li><a href="#contact" class="nav-cta" data-en="Get a Quote" data-es="Cotizar">Get a Quote</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div id="slideshow"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow fu fu1" data-en="Chicago · Industrial Luxury Furniture" data-es="Chicago · Muebles de Lujo Industrial">Chicago · Industrial Luxury Furniture</div>
+    <h1 class="hero-title fu fu2">
+      <span data-en="Custom Furniture" data-es="Muebles Custom">Custom Furniture</span><br>
+      <em data-en="Designed to Stand Out." data-es="Diseñados para Destacar.">Designed to Stand Out.</em>
+    </h1>
+    <p class="hero-sub fu fu3" data-en="We create unique furniture pieces using metal, wood, and natural stone — combining industrial design with modern elegance." data-es="Creamos piezas únicas usando metal, madera y piedra natural — combinando diseño industrial con elegancia moderna.">We create unique furniture pieces using metal, wood, and natural stone — combining industrial design with modern elegance.</p>
+    <div class="hero-actions fu fu4">
+      <a href="custom-kitchen.html" class="btn-gold" data-en="Start Custom Project" data-es="Iniciar Proyecto Custom">Start Custom Project</a>
+      <a href="new-kitchen.html" class="btn-ghost" data-en="Browse Collection" data-es="Ver Colección">Browse Collection</a>
+    </div>
+  </div>
+  <div class="hero-dots" id="hero-dots"></div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker"><div class="ticker-track" id="ticker-track"></div></div>
+
+<!-- TWO SEGMENTS -->
+<section class="segments" id="segments">
+  <div style="text-align:center; max-width:600px; margin:0 auto 60px;">
+    <div class="sec-label" style="justify-content:center;" data-en="What We Do" data-es="Lo Que Hacemos">What We Do</div>
+    <h2 class="sec-title" data-en="Two Ways to Own <em>Exceptional Furniture.</em>" data-es="Dos Formas de Tener <em>Muebles Excepcionales.</em>">Two Ways to Own <em>Exceptional Furniture.</em></h2>
+  </div>
+  <div class="seg-grid">
+    <!-- CUSTOM -->
+    <a href="custom-kitchen.html" class="seg-card">
+      <div class="seg-img" id="seg-custom"></div>
+      <div class="seg-over">
+        <div class="seg-tag" data-en="01 — Made to Order" data-es="01 — A la Medida">01 — Made to Order</div>
+        <div class="seg-name" data-en="Custom Furniture" data-es="Muebles Custom">Custom Furniture</div>
+        <p class="seg-desc-card" data-en="Fully customized pieces built from scratch — metal, wood, marble, granite, quartz, and onyx. Designed exactly to your space, style, and vision." data-es="Piezas completamente personalizadas construidas desde cero — metal, madera, mármol, granito, cuarzo y ónix. Diseñadas exactamente a tu espacio, estilo y visión.">Fully customized pieces built from scratch — metal, wood, marble, granite, quartz, and onyx. Designed exactly to your space, style, and vision.</p>
+        <div class="seg-arrow" data-en="Explore Custom" data-es="Explorar Custom">Explore Custom</div>
+      </div>
+    </a>
+    <!-- NEW FURNITURE -->
+    <a href="new-kitchen.html" class="seg-card">
+      <div class="seg-img" id="seg-new"></div>
+      <div class="seg-over">
+        <div class="seg-tag" data-en="02 — Ready to Ship" data-es="02 — Listo para Enviar">02 — Ready to Ship</div>
+        <div class="seg-name" data-en="New Furniture" data-es="Muebles Nuevos">New Furniture</div>
+        <p class="seg-desc-card" data-en="Premium furniture sourced directly from top warehouses — the same quality you'd find in high-end retail, at prices that make sense. Available now." data-es="Muebles premium conseguidos directamente de los mejores warehouses — la misma calidad que encuentras en retail de lujo, a precios que tienen sentido. Disponible ahora.">Premium furniture sourced directly from top warehouses — the same quality you'd find in high-end retail, at prices that make sense. Available now.</p>
+        <div class="seg-arrow" data-en="Shop Collection" data-es="Ver Colección">Shop Collection</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- CATEGORIES PREVIEW -->
+<section class="cat-section" id="categories">
+  <div class="sec-label" data-en="Browse by Space" data-es="Explorar por Espacio">Browse by Space</div>
+  <h2 class="sec-title"><em data-en="Every Room." data-es="Cada Espacio.">Every Room.</em> <span data-en="Every Style." data-es="Cada Estilo.">Every Style.</span></h2>
+  <div class="cat-grid" id="cat-grid"></div>
+</section>
+
+<!-- MATERIALS -->
+<section class="materials" id="materials">
+  <div style="text-align:center; max-width:560px; margin:0 auto;">
+    <div class="sec-label" style="justify-content:center;" data-en="Our Materials" data-es="Nuestros Materiales">Our Materials</div>
+    <h2 class="sec-title" style="text-align:center;"><span data-en="Metal." data-es="Metal.">Metal.</span> <em data-en="Wood." data-es="Madera.">Wood.</em> <span data-en="Stone." data-es="Piedra.">Stone.</span></h2>
+    <p class="sec-desc" style="margin:0 auto; text-align:center;" data-en="Built to last and designed to impress. We work with the finest materials to ensure every piece is both beautiful and durable." data-es="Construido para durar y diseñado para impresionar. Trabajamos con los mejores materiales para asegurar que cada pieza sea hermosa y duradera.">Built to last and designed to impress. We work with the finest materials to ensure every piece is both beautiful and durable.</p>
+  </div>
+  <div class="mat-grid reveal">
+    <div class="mat-card">
+      <span class="mat-icon">⚙️</span>
+      <div class="mat-name" data-en="Metal" data-es="Metal">Metal</div>
+      <p class="mat-desc" data-en="Structural steel, stainless, and custom alloys. Welded, powder-coated, or polished to perfection. The backbone of every custom piece." data-es="Acero estructural, inoxidable y aleaciones custom. Soldado, lacado en polvo o pulido a la perfección. La columna vertebral de cada pieza.">Structural steel, stainless, and custom alloys. Welded, powder-coated, or polished to perfection. The backbone of every custom piece.</p>
+    </div>
+    <div class="mat-card">
+      <span class="mat-icon">🌲</span>
+      <div class="mat-name" data-en="Wood" data-es="Madera">Wood</div>
+      <p class="mat-desc" data-en="Reclaimed, solid, and engineered woods. Oak, walnut, pine, and maple. Warm texture that contrasts beautifully with cold metal." data-es="Madera reciclada, maciza e ingeniería. Roble, nogal, pino y arce. Textura cálida que contrasta perfectamente con el metal frío.">Reclaimed, solid, and engineered woods. Oak, walnut, pine, and maple. Warm texture that contrasts beautifully with cold metal.</p>
+    </div>
+    <div class="mat-card">
+      <span class="mat-icon">🪨</span>
+      <div class="mat-name" data-en="Natural Stone" data-es="Piedra Natural">Natural Stone</div>
+      <p class="mat-desc" data-en="Marble, granite, quartz, and onyx. Each slab is unique — no two pieces are ever the same. The ultimate luxury statement." data-es="Mármol, granito, cuarzo y ónix. Cada losa es única — no hay dos piezas iguales. El statement de lujo definitivo.">Marble, granite, quartz, and onyx. Each slab is unique — no two pieces are ever the same. The ultimate luxury statement.</p>
+    </div>
+    <div class="mat-card">
+      <span class="mat-icon">✦</span>
+      <div class="mat-name" data-en="Custom Finishes" data-es="Acabados Custom">Custom Finishes</div>
+      <p class="mat-desc" data-en="Matte, gloss, brushed, patinated. Every surface finish is chosen to complement the space and the client's vision." data-es="Mate, brillante, cepillado, patinado. Cada acabado de superficie se elige para complementar el espacio y la visión del cliente.">Matte, gloss, brushed, patinated. Every surface finish is chosen to complement the space and the client's vision.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section class="about" id="about">
+  <div>
+    <div class="sec-label" data-en="About Us" data-es="Nosotros">About Us</div>
+    <h2 class="sec-title">
+      <span data-en="Built on" data-es="Construido en">Built on</span><br>
+      <em data-en="Precision & Passion." data-es="Precisión y Pasión.">Precision & Passion.</em>
+    </h2>
+    <div class="gold-rule"></div>
+    <p class="sec-desc" data-en="Structure Art Studio is a custom furniture brand focused on creating unique, high-quality pieces that combine metal, wood, and natural stone. Founded by Adrián Rodriguez — industrial designer and fabricator — every piece reflects decades of hands-on expertise." data-es="Structure Art Studio es una marca de muebles custom enfocada en crear piezas únicas y de alta calidad que combinan metal, madera y piedra natural. Fundada por Adrián Rodriguez — diseñador industrial y fabricador — cada pieza refleja décadas de experiencia práctica.">Structure Art Studio is a custom furniture brand focused on creating unique, high-quality pieces that combine metal, wood, and natural stone. Founded by Adrián Rodriguez — industrial designer and fabricator — every piece reflects decades of hands-on expertise.</p>
+    <p class="sec-desc" style="margin-top:14px;" data-en="We work closely with clients to bring ideas to life, delivering pieces that are both functional and visually impactful." data-es="Trabajamos de cerca con los clientes para dar vida a las ideas, entregando piezas que son tanto funcionales como visualmente impactantes.">We work closely with clients to bring ideas to life, delivering pieces that are both functional and visually impactful.</p>
+    <div class="about-stats">
+      <div class="stat reveal">
+        <div class="stat-n">100+</div>
+        <div class="stat-l" data-en="Pieces Delivered" data-es="Piezas Entregadas">Pieces Delivered</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-n">Custom</div>
+        <div class="stat-l" data-en="Every Design" data-es="Cada Diseño">Every Design</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-n">Chicago</div>
+        <div class="stat-l" data-en="Based & Built" data-es="Basados y Construidos">Based & Built</div>
+      </div>
+      <div class="stat reveal">
+        <div class="stat-n">Fast</div>
+        <div class="stat-l" data-en="Turnaround" data-es="Tiempo de Entrega">Turnaround</div>
+      </div>
+    </div>
+    <div style="margin-top:36px;">
+      <a href="about.html" class="btn-ghost" data-en="Learn More About Us" data-es="Conoce Más">Learn More About Us</a>
+    </div>
+  </div>
+  <div class="about-visual">
+    <div class="av-main" id="av-main"></div>
+    <div class="av-accent" id="av-accent"></div>
+    <div class="av-badge">
+      <div class="av-badge-big">SA</div>
+      <span class="av-badge-sm" data-en="Chicago" data-es="Chicago">Chicago</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div style="text-align:center; max-width:560px; margin:0 auto;">
+    <div class="sec-label" style="justify-content:center;" data-en="How It Works" data-es="Cómo Funciona">How It Works</div>
+    <h2 class="sec-title" style="text-align:center;"><em data-en="Simple." data-es="Simple.">Simple.</em> <span data-en="Transparent." data-es="Transparente.">Transparent.</span> <span data-en="Yours." data-es="Tuyo.">Yours.</span></h2>
+  </div>
+  <div class="proc-grid">
+    <div class="proc-step reveal">
+      <div class="proc-n">01</div>
+      <div class="proc-t" data-en="Share Your Vision" data-es="Comparte Tu Visión">Share Your Vision</div>
+      <p class="proc-d" data-en="Message us on WhatsApp, DM on Instagram, or fill the form. Share photos, dimensions, or just an idea." data-es="Mándanos mensaje por WhatsApp, DM en Instagram o llena el formulario. Comparte fotos, medidas o solo una idea.">Message us on WhatsApp, DM on Instagram, or fill the form. Share photos, dimensions, or just an idea.</p>
+    </div>
+    <div class="proc-step reveal">
+      <div class="proc-n">02</div>
+      <div class="proc-t" data-en="Get Your Quote" data-es="Recibe Tu Cotización">Get Your Quote</div>
+      <p class="proc-d" data-en="We respond with a clear quote — no hidden fees. Custom pieces get a fabrication timeline; ready pieces ship fast." data-es="Respondemos con una cotización clara — sin costos ocultos. Las piezas custom llevan timeline; las disponibles se envían rápido.">We respond with a clear quote — no hidden fees. Custom pieces get a fabrication timeline; ready pieces ship fast.</p>
+    </div>
+    <div class="proc-step reveal">
+      <div class="proc-n">03</div>
+      <div class="proc-t" data-en="We Build or Source" data-es="Fabricamos o Conseguimos">We Build or Source</div>
+      <p class="proc-d" data-en="Custom orders enter our fabrication process. Ready furniture is prepared from our warehouse network for delivery." data-es="Las órdenes custom entran a nuestro proceso de fabricación. Los muebles disponibles se preparan desde nuestra red de warehouses.">Custom orders enter our fabrication process. Ready furniture is prepared from our warehouse network for delivery.</p>
+    </div>
+    <div class="proc-step reveal">
+      <div class="proc-n">04</div>
+      <div class="proc-t" data-en="Delivery & Setup" data-es="Entrega e Instalación">Delivery & Setup</div>
+      <p class="proc-d" data-en="We deliver to your location and assist with setup. Your space, transformed — on time and on budget." data-es="Entregamos en tu ubicación y ayudamos con la instalación. Tu espacio, transformado — a tiempo y dentro del presupuesto.">We deliver to your location and assist with setup. Your space, transformed — on time and on budget.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<div class="testi">
+  <div class="testi-card reveal">
+    <div class="testi-stars">★★★★★</div>
+    <p class="testi-text" data-en='"We wanted a custom dining table with a steel X-base — something we couldn\'t find anywhere. Structure Art Studio built exactly what we envisioned. Absolutely stunning."' data-es='"Queríamos una mesa de comedor custom con base de acero en X — algo que no encontrábamos en ningún lugar. Structure Art Studio construyó exactamente lo que imaginamos. Impresionante."'>"We wanted a custom dining table with a steel X-base — something we couldn't find anywhere. Structure Art Studio built exactly what we envisioned. Absolutely stunning."</p>
+    <div class="testi-by">— M. Reyes · Chicago, IL</div>
+  </div>
+  <div class="testi-card reveal">
+    <div class="testi-stars">★★★★★</div>
+    <p class="testi-text" data-en='"Got bookshelves and a coffee table from their curated collection. Quality is incredible for the price — way better than anything we found at retail."' data-es='"Conseguí libreros y mesa de centro de su colección curada. La calidad es increíble para el precio — mucho mejor que cualquier cosa que encontré en tienda."'>"Got bookshelves and a coffee table from their curated collection. Quality is incredible for the price — way better than anything we found at retail."</p>
+    <div class="testi-by">— D. Fontaine · Wicker Park</div>
+  </div>
+  <div class="testi-card reveal">
+    <div class="testi-stars">★★★★★</div>
+    <p class="testi-text" data-en='"They outfitted our entire home office — custom desk, shelving, everything. Industrial aesthetic, luxury feel. Adrián and his team are the real deal."' data-es='"Amueblaron toda nuestra oficina en casa — escritorio custom, estantes, todo. Estética industrial, sensación de lujo. Adrián y su equipo son lo máximo."'>"They outfitted our entire home office — custom desk, shelving, everything. Industrial aesthetic, luxury feel. Adrián and his team are the real deal."</p>
+    <div class="testi-by">— T. Morales · Lincoln Park</div>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div>
+    <div class="sec-label" data-en="Get In Touch" data-es="Contáctanos">Get In Touch</div>
+    <h2 class="sec-title">
+      <span data-en="Start Your" data-es="Empieza Tu">Start Your</span><br>
+      <em data-en="Project Today." data-es="Proyecto Hoy.">Project Today.</em>
+    </h2>
+    <div class="gold-rule"></div>
+    <p class="sec-desc" data-en="Looking for custom furniture or ready-to-install pieces? Get in touch — we respond fast and we speak your language." data-es="¿Buscas muebles custom o piezas listas para instalar? Contáctanos — respondemos rápido y hablamos tu idioma.">Looking for custom furniture or ready-to-install pieces? Get in touch — we respond fast and we speak your language.</p>
+    <div class="contact-methods">
+      <a href="https://wa.me/17088553201" target="_blank" class="cm">
+        <span class="cm-ico">💬</span>
+        <div>
+          <span class="cm-lbl" data-en="WhatsApp — Fastest Response" data-es="WhatsApp — Respuesta Más Rápida">WhatsApp — Fastest Response</span>
+          <div class="cm-val">+1 (708) 855-3201</div>
+        </div>
+      </a>
+      <a href="tel:+14709148996" class="cm">
+        <span class="cm-ico">📞</span>
+        <div>
+          <span class="cm-lbl" data-en="Phone" data-es="Teléfono">Phone</span>
+          <div class="cm-val">+1 (470) 914-8996</div>
+        </div>
+      </a>
+      <a href="mailto:Structureartco@gmail.com" class="cm">
+        <span class="cm-ico">✉️</span>
+        <div>
+          <span class="cm-lbl" data-en="Email" data-es="Correo">Email</span>
+          <div class="cm-val">Structureartco@gmail.com</div>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/todo_en_estructura_chicago" target="_blank" class="cm">
+        <span class="cm-ico">📸</span>
+        <div>
+          <span class="cm-lbl">Instagram</span>
+          <div class="cm-val">@todo_en_estructura_chicago</div>
+        </div>
+      </a>
+    </div>
+    <div class="social-row">
+      <a href="https://www.instagram.com/todo_en_estructura_chicago" target="_blank" class="soc">IG</a>
+      <a href="https://wa.me/17088553201" target="_blank" class="soc">WA</a>
+      <a href="mailto:Structureartco@gmail.com" class="soc">✉</a>
+      <a href="https://www.canva.com/design/DAHCFvGKUVU/Or0UiHITrQjKPoW" target="_blank" class="soc">↗</a>
+    </div>
+  </div>
+  <div>
+    <div class="sec-label" style="margin-bottom:24px;" data-en="Send a Message" data-es="Enviar Mensaje">Send a Message</div>
+    <div class="cform">
+      <div class="form-row2">
+        <div class="fg">
+          <label class="flbl" data-en="Name" data-es="Nombre">Name</label>
+          <input type="text" class="finput" data-placeholder-en="Your name" data-placeholder-es="Tu nombre" placeholder="Your name"/>
+        </div>
+        <div class="fg">
+          <label class="flbl" data-en="Phone" data-es="Teléfono">Phone</label>
+          <input type="text" class="finput" data-placeholder-en="Your phone" data-placeholder-es="Tu teléfono" placeholder="Your phone"/>
+        </div>
+      </div>
+      <div class="fg">
+        <label class="flbl" data-en="Email" data-es="Correo">Email</label>
+        <input type="email" class="finput" data-placeholder-en="your@email.com" data-placeholder-es="tu@correo.com" placeholder="your@email.com"/>
+      </div>
+      <div class="fg">
+        <label class="flbl" data-en="Project Type" data-es="Tipo de Proyecto">Project Type</label>
+        <select class="fsel">
+          <option value="" disabled selected data-en="Select..." data-es="Selecciona...">Select...</option>
+          <option data-en="Custom Furniture" data-es="Muebles Custom">Custom Furniture</option>
+          <option data-en="New Furniture / Curated" data-es="Muebles Nuevos / Curados">New Furniture / Curated</option>
+          <option data-en="Kitchen" data-es="Cocina">Kitchen</option>
+          <option data-en="Living Room" data-es="Sala">Living Room</option>
+          <option data-en="Dining Room" data-es="Comedor">Dining Room</option>
+          <option data-en="Bedroom" data-es="Recámara">Bedroom</option>
+          <option data-en="Office" data-es="Oficina">Office</option>
+          <option data-en="Outdoor" data-es="Exterior">Outdoor</option>
+          <option data-en="Other" data-es="Otro">Other</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label class="flbl" data-en="Project Description" data-es="Descripción del Proyecto">Project Description</label>
+        <textarea class="ftxt" data-placeholder-en="Describe your project, space, style, dimensions, timeline…" data-placeholder-es="Describe tu proyecto, espacio, estilo, medidas, tiempo estimado…" placeholder="Describe your project, space, style, dimensions, timeline…"></textarea>
+      </div>
+      <button class="fsub" onclick="handleSend(this)" data-en="Send Message →" data-es="Enviar Mensaje →">Send Message →</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand-wrap">
+      <svg width="32" height="32" viewBox="0 0 60 60" fill="none"><rect x="15" y="3" width="30" height="30" transform="rotate(45 30 18)" stroke="#B38D5F" stroke-width="1.8" fill="none"/><rect x="15" y="15" width="30" height="30" transform="rotate(45 30 30)" stroke="#B38D5F" stroke-width="1.8" fill="none"/><line x1="22" y1="14" x2="30" y2="22" stroke="#B38D5F" stroke-width="1.5"/><line x1="30" y1="22" x2="38" y2="14" stroke="#B38D5F" stroke-width="1.5"/></svg>
+      <div>
+        <div class="footer-brand-name">Structure Art Studio</div>
+        <div class="footer-brand-tag" data-en="Industrial Design & Furniture · Chicago" data-es="Diseño Industrial y Muebles · Chicago">Industrial Design & Furniture · Chicago</div>
+      </div>
+    </div>
+    <nav class="footer-nav">
+      <a href="custom-kitchen.html" data-en="Custom" data-es="Custom">Custom</a>
+      <a href="new-kitchen.html" data-en="New Furniture" data-es="Muebles Nuevos">New Furniture</a>
+      <a href="about.html" data-en="About" data-es="Nosotros">About</a>
+      <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
+      <a href="https://www.canva.com/design/DAHCFvGKUVU/Or0UiHITrQjKPoW" target="_blank" data-en="Portfolio ↗" data-es="Portafolio ↗">Portfolio ↗</a>
+    </nav>
+  </div>
+  <div class="footer-bot">
+    <div class="footer-copy" data-en="© 2026 Structure Art Studio LLC · Chicago, Illinois · All rights reserved." data-es="© 2026 Structure Art Studio LLC · Chicago, Illinois · Todos los derechos reservados.">© 2026 Structure Art Studio LLC · Chicago, Illinois · All rights reserved.</div>
+    <div class="footer-copy">Structureartco@gmail.com · +1 (708) 855-3201</div>
+  </div>
+</footer>
+
+<script src="js/images.js"></script>
+<script src="js/main.js"></script>
+<script>
+// HERO SLIDESHOW
+const heroImgs = [IMGS.custom2, IMGS.inspo1, IMGS.custom1, IMGS.inspo3, IMGS.inspo2, IMGS.custom3, IMGS.inspo4];
+const ss = document.getElementById('slideshow');
+const dotsEl = document.getElementById('hero-dots');
+let cur = 0;
+heroImgs.forEach((src, i) => {
+  const d = document.createElement('div');
+  d.className = 'hero-slide' + (i === 0 ? ' active' : '');
+  d.style.backgroundImage = `url(${src})`;
+  ss.appendChild(d);
+  const dot = document.createElement('button');
+  dot.className = 'hero-dot' + (i === 0 ? ' active' : '');
+  dot.onclick = () => goSlide(i);
+  dotsEl.appendChild(dot);
+});
+function goSlide(n) {
+  ss.querySelectorAll('.hero-slide')[cur].classList.remove('active');
+  dotsEl.querySelectorAll('.hero-dot')[cur].classList.remove('active');
+  cur = n;
+  ss.querySelectorAll('.hero-slide')[cur].classList.add('active');
+  dotsEl.querySelectorAll('.hero-dot')[cur].classList.add('active');
+}
+setInterval(() => goSlide((cur + 1) % heroImgs.length), 5000);
+
+// ABOUT IMAGES
+document.getElementById('av-main').style.backgroundImage = `url(${IMGS.custom2})`;
+document.getElementById('av-accent').style.backgroundImage = `url(${IMGS.inspo2})`;
+
+// SEGMENT IMAGES
+document.getElementById('seg-custom').style.backgroundImage = `url(${IMGS.custom1})`;
+document.getElementById('seg-new').style.backgroundImage = `url(${IMGS.inspo5})`;
+
+// CATEGORIES GRID
+const cats = [
+  { key:'inspo1', en:'Kitchen', es:'Cocina', href:'custom-kitchen.html', tagEn:'Explore →', tagEs:'Explorar →' },
+  { key:'inspo3', en:'Dining Room', es:'Comedor', href:'custom-dining.html', tagEn:'Explore →', tagEs:'Explorar →' },
+  { key:'inspo2', en:'Office', es:'Oficina', href:'custom-office.html', tagEn:'Explore →', tagEs:'Explorar →' },
+  { key:'inspo4', en:'Coffee & Bar', es:'Café y Bar', href:'custom-living.html', tagEn:'Explore →', tagEs:'Explorar →' },
+  { key:'custom1', en:'Dining Custom', es:'Comedor Custom', href:'custom-dining.html', tagEn:'Custom →', tagEs:'Custom →' },
+  { key:'inspo6', en:'Vintage Industrial', es:'Industrial Vintage', href:'new-living.html', tagEn:'Browse →', tagEs:'Ver →' },
+];
+const grid = document.getElementById('cat-grid');
+cats.forEach(c => {
+  const a = document.createElement('a');
+  a.href = c.href; a.className = 'cat-card reveal';
+  a.innerHTML = `
+    <div class="cat-img" style="background-image:url(${IMGS[c.key]})"></div>
+    <div class="cat-over">
+      <div class="cat-label" data-en="${c.en}" data-es="${c.es}">${c.en}</div>
+      <div class="cat-sub" data-en="${c.tagEn}" data-es="${c.tagEs}">${c.tagEn}</div>
+    </div>`;
+  grid.appendChild(a);
+});
+
+// TICKER
+buildTicker();
+
+// LOGO
+document.querySelectorAll('.nav-logo-placeholder').forEach(el => el.innerHTML = LOGO_SVG);
+</script>
+</body>
+</html>
